@@ -1,0 +1,12 @@
+
+li{
+    padding: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.nav-link{
+    /* style={{ textDecoration: 'none', color: 'oklch(0.21 0.034 264.665)', padding: '1rem'}} */
+    text-decoration: none;
+    color: oklch(0.21 0.034 264.665);
+    font-weight: 600;
+}
