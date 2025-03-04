@@ -1,13 +1,26 @@
-aside{
+/* aside{
   position: absolute;
-  /* background-color: pink; */
-  width: 200px;
+  width: 250px;
   padding-inline: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+} */
+
+aside {
+  position: absolute;
+  width: 250px;
+  height: 100vh; /* Ensures full height */
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%); /* Moves content up by 50% of its height */
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
 }
+
 
 ul{
   list-style: none;
@@ -15,15 +28,37 @@ ul{
   padding-left: 0;
 }
 
-main{
+.container {
+  width: 250px; /* Adjust as needed */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: gray transparent; /* For Firefox */
+}
+
+/* For Webkit browsers like Chrome and Safari */
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 4px;
+}
+
+main {
   position: absolute;
   /* background-color: violet; */
   height: 100%;
   right: 0;
-  width: calc(100% - 200px - 10rem);
+  width: calc(100% - 300px - 10rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 3rem;
-  
+  padding-right: 4rem;
 }

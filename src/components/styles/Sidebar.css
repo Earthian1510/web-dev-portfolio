@@ -1,12 +1,64 @@
 
-li{
-    padding: 0.3rem;
-    font-size: 1.1rem;
+.container{
+    padding-left: 2rem;
+}
+
+.pr-4{
+    padding-right: 4rem;
+}
+
+.fw-500{
+    font-weight: 400;
+}
+
+.my-img{
+    height: 12rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.mb-0{
+    margin-bottom: 0.2rem;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+
+ul li{
+    margin-bottom: 0.5rem;
+}
+
+.active{
+    font-weight: bold;
 }
 
 .nav-link{
-    /* style={{ textDecoration: 'none', color: 'oklch(0.21 0.034 264.665)', padding: '1rem'}} */
+    font-size: 1.2rem;
+    color: black;
     text-decoration: none;
-    color: oklch(0.21 0.034 264.665);
-    font-weight: 600;
+}
+
+
+.nav-link:hover{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.ff-courier{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.ml-1{
+    margin-left: 1rem;
 }

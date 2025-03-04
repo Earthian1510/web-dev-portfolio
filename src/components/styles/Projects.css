@@ -1,1 +1,75 @@
 
+.pr-4{
+    padding-right: 4rem;
+}
+
+.fw-500{
+    font-weight: 400;
+}
+
+.mb-0{
+    margin-bottom: 0.2rem;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+.project-links a{
+    margin-right: 1rem;
+}
+
+.project-links a:hover i{
+    color: #007bff; 
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.project-links i{
+    font-size: 1.4rem;
+    color: black;
+}
+
+ol{
+    padding-left: 1.5rem;
+}
+
+.ff-courier{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.project-card {
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 8px;
+    padding-inline: 2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 0.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  .project-title:hover {
+    text-decoration: underline;
+  }
+  
+  .project-details {
+    padding-inline: 1rem;
+  }
+  

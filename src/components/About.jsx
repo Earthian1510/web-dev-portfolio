@@ -1,43 +1,43 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import './styles/About.css'  
 
 const About = () => {
   return (
-    <div>
-        <h1 style={{ marginBottom: '0.4rem'}}>Anjali Thorat</h1>
-        <h2 style={{ fontWeight: '400', marginTop: '0px'}}>Full Stack Developer</h2>
+    <div className="about-container">
+      <h1 className="about-name">Anjali Thorat</h1>
+      <h2 className="about-title">Full Stack Developer</h2>
 
-        <ul style={{ display: 'flex', gap: '1rem'}}>
-            <li>
-                <Link>
-                    <i className="bi bi-github" style={{ fontSize: '1.4rem', color: 'oklch(0.21 0.034 264.665)'}}></i>
-                </Link>
-            </li>
-            <li>
-                <Link>
-                    <i className="bi bi-envelope-at" style={{ fontSize: '1.4rem', color: 'oklch(0.21 0.034 264.665)'}}></i>
-                </Link>
-            </li>
-            <li>
-                <Link>
-                <i className="bi bi-linkedin" style={{ fontSize: '1.4rem', color: 'oklch(0.21 0.034 264.665)'}}></i>
-                </Link>
-            </li>
-            <li>
-                <Link>
-                <i className="bi bi-download" style={{ fontSize: '1.4rem', color: 'oklch(0.21 0.034 264.665)'}}></i>
-                </Link>
-            </li>
+      <ul className="social-links">
+        <li>
+          <a href="https://github.com/Earthian1510" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <i className="bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:your-email@example.com" className="icon-link">
+            <i className="bi bi-envelope-at"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <i className="bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/your-resume.pdf" download className="icon-link">
+            <i className="bi bi-download"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div>
+        <h3>Primary Interests:</h3>
+        <ul className="interests-list">
+          <li>Solving real-world problems of common people with programming</li>
+          <li>Sustainability and Climate Change</li>
+          <li>Zen Philosophy</li>
         </ul>
-        <div>
-            <h3>Primary Interests: </h3>
-            <ul style={{ listStyle: 'disc', marginLeft: '2rem'}}>
-                <li>Solving real world problems of common people with programming</li>
-                <li>Sustainability and Climate Change </li>
-                <li>Zen Philosophy</li>
-            </ul>
-        </div>
-        
+      </div>
     </div>
   )
 }
